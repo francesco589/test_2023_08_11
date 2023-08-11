@@ -17,7 +17,7 @@ setProd(obj.data)
 }
 getProd()
 },[])
-console.log(prod);
+
 
   return (
     <>
