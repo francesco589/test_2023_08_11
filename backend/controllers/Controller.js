@@ -29,12 +29,21 @@ class Controller {
         res.json(obj)
     }
     static async updateProduct(req, res) {
-
+        const id = req.params.id
+        const upda = {
+            name: req.body.name,
+            description: req.body.description,
+            price: parseInt(req.body.price),
+            img: req.body.img,
+            categoryId: parseInt(req.body.categoryId)
+        }
+       const obj = await Product.findByIdAndUpdate(id, upda)
+       res.json(obj)
     }
 
     static async getCategories(req, res) {
-            const obj = await Category.find()
-            res.json(obj)
+        const obj = await Category.find()
+        res.json(obj)
     }
     static async postCategory(req, res) {
 
