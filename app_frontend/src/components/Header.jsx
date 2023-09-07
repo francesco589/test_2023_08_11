@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Header() {
 
+  const adminHandler = (e) => {
+
+  }
 
   return (
     <header className=' border-b border-slate-300 w-full flex justify-between items-center' >
@@ -11,7 +14,7 @@ function Header() {
 
         <nav className='p-5 flex gap-4'>
             <Link to='/'>Home</Link>
-            <Link to='admin'>Admin</Link>
+            <Link to='/login'>Admin</Link>
         </nav>
         
         

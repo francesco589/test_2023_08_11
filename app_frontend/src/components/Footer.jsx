@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     const clickHandler = (e)=>{
-      if( confirm('Attenzione!!! Stai per essere reindirizzato fuori dal sito') == true){
+      if( confirm("Warning!!! You'll be redirect!") == true){
         window.location.replace('https://www.linkedin.com/in/francesco-accardo-090bab125/')
       }
       else{
@@ -11,7 +11,7 @@ function Footer() {
     }
 
   return (
-    <footer className=' border-t border-slate-300 w-full flex justify-between items-center' >
+    <footer className=' bg-black text-white border-t border-slate-300 w-full flex justify-between items-center' >
         
         <div className=' p-10 '>Designed by <p className=' font-bold'>Francesco Accardo</p></div>
         <nav className='p-10'>
